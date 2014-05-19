@@ -1,9 +1,9 @@
-Backbone.cache
+Backbone.Cache
 ==============
 
 A non-intrusive way of caching requests in Backbone applications
 
-### Sets the maximum lifetime for cached requests
+### Start caching ajax requests for 6 seconds
 ```javascript
-Backbone.cache.lifetime = 6000;
+Backbone.ajax = new Backbone.Cache(Backbone.ajax, { lifetime: 6000 });
 ```
